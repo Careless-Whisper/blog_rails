@@ -14,5 +14,5 @@
     * Execute rails db:migrate for the migrations 
     * Execute rails db:seed to initialize and feed your database 
 
-
-
+**Made on Ruby on rails** 
+ :copyright: **Maï Lan, Jeremie Edery, Hadia Bouria, Rémi Boivin, Valérie Chang**
