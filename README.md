@@ -7,9 +7,9 @@ Version Ruby: 2.5.1
 
 Exécuter l'installation du bundle
 
-Run rails db: migrer pour obtenir toutes les mises à jour nécessaires
+Run rails db: migrate pour obtenir toutes les mises à jour nécessaires
 
-Run rails db: seeds pour obtenir la base de données par défaut
+Run rails db: seed pour obtenir la base de données par défaut
 
 
 
