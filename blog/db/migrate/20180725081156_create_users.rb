@@ -1,6 +1,6 @@
 class CreateUsers < ActiveRecord::Migration[5.2]
 
-
+# Create users table with a first_name, last_name and an email
   def change
     create_table :users do |t|
 
