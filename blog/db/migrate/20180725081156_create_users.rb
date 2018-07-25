@@ -25,7 +25,12 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.timestamps
     end
 
+    create_table :categories do |t|
 
+      t.string :name
+      t.belongs_to :articles, index: true
+      t.timestamps
+    end
 
   end
 end

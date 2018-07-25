@@ -7,5 +7,21 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'faker'
 10.times do
-  user = User.create(first_name: Faker::Company.name, email: Faker::Internet.email)
+
+  first_name =  Faker::Name.first_name
+  email = Faker::Internet.email
+  User.create!(email: email,
+              first_name: first_name)
+end
+10.times do
+  random = Faker::Number.between(1, 10)
+  title = Faker::Book.title
+   content = Faker::Community.quotes
+   user = User.find(random)
+
+   Article.create!(title: title,
+
+                  content: content,
+                  users_id: user.id)
+
 end
