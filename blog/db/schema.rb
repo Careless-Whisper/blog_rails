@@ -12,23 +12,21 @@
 
 ActiveRecord::Schema.define(version: 2018_07_25_081156) do
 
-  create_table "article", force: :cascade do |t|
+  create_table "articles", force: :cascade do |t|
     t.string "title"
     t.string "content"
     t.integer "users_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["users_id"], name: "index_article_on_users_id"
+    t.index ["users_id"], name: "index_articles_on_users_id"
   end
 
-  create_table "like", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
-    t.string "email"
-    t.integer "article_id"
+  create_table "likes", force: :cascade do |t|
+    t.string "users"
+    t.integer "articles_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["article_id"], name: "index_like_on_article_id"
+    t.index ["articles_id"], name: "index_likes_on_articles_id"
   end
 
   create_table "users", force: :cascade do |t|
