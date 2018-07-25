@@ -49,13 +49,20 @@ end
     category_id: rand((Category.first.id)..(Category.last.id))
   )
 end
+#
+# Commentaire.create(
+#   title: Faker::WorldOfWarcraft.quote,
+#   content: Faker::HeyArnold.quote.paragraph_by_chars,
+#   user_id: new_user.id,
+#   category_id: rand((Commentaire.first.id)..(Commentaire.last.id))
+#
 
-# ((User.first.id)..(User.last.id)).each do |user_id|
-#   15.times do
-#     Comment.create(
-#       content: Faker::WorldOfWarcraft.quote,
-#       article_id: rand((Article.first.id)..(Article.last.id)),
-#       user_id: user_id
-#     )
-#   end
-# end
+((User.first.id)..(User.last.id)).each do |user_id|
+  15.times do
+    Comment.create(
+      content: Faker::WorldOfWarcraft.quote,
+      article_id: rand((Article.first.id)..(Article.last.id)),
+      user_id: user_id
+    )
+  end
+end
