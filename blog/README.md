@@ -1,9 +1,7 @@
-# README
-
 # Rails Blog 
-## Welcome to our Rails application repository !
+###### Welcome to our Rails application repository !
 
-# Instructions 
+## Instructions 
 
 ## Follow these step to test ou App
 
