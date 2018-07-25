@@ -1,7 +1,8 @@
 # Rails Blog 
-###### Welcome to our Rails application repository !
 
-## Instructions 
+# Welcome to our Rails application repository !
+
+### Instructions 
 
 ## Follow these step to test ou App
 
