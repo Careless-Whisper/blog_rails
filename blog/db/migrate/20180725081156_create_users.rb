@@ -10,27 +10,5 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.timestamps
     end
 
-    create_table :articles do |t|
-
-      t.string :title
-      t.string :content
-      t.belongs_to :users, index: true
-      t.timestamps
-    end
-
-    create_table :likes do |t|
-
-      t.string :users
-      t.belongs_to :articles, index: true
-      t.timestamps
-    end
-
-    create_table :categories do |t|
-
-      t.string :name
-      t.belongs_to :articles, index: true
-      t.timestamps
-    end
-
   end
 end

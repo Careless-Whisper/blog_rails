@@ -11,24 +11,30 @@
 #   first_name =  Faker::Name.first_name
 #   email = Faker::Internet.email
 #   User.create!(email: email,
-#               first_name: first_name)
+#     first_name: first_name)
+#   end
+#   10.times do
+#     random = Faker::Number.between(1, 10)
+#     title = Faker::Book.title
+#     content = Faker::Community.quotes
+#     user = User.find(random)
+#
+#     Article.create!(title: title,
+#
+#       content: content,
+#       users_id: user.id)
+#
+#     end
+#
+#
+#
+#     5.times do
+#       random = Faker::Number.between(1, 10)
+#       name = Faker::Cannabis.category
+#       article = Article.find(random)
+#       Category.create!(name: name, articles_id: article.id)
+#     end
 # end
-# 10.times do
-#   random = Faker::Number.between(1, 10)
-#   title = Faker::Book.title
-#    content = Faker::Community.quotes
-#    user = User.find(random)
-#
-#    Article.create!(title: title,
-#
-#                   content: content,
-#                   user_id: user.id)
-#
-# end
-#
-#
-
-
 require 'faker'
 
 5.times do
@@ -50,12 +56,12 @@ end
   )
 end
 
-# ((User.first.id)..(User.last.id)).each do |user_id|
-#   15.times do
-#     Comment.create(
-#       content: Faker::WorldOfWarcraft.quote,
-#       article_id: rand((Article.first.id)..(Article.last.id)),
-#       user_id: user_id
-#     )
-#   end
-# end
+((User.first.id)..(User.last.id)).each do |user_id|
+  15.times do
+    Comment.create(
+      content: Faker::WorldOfWarcraft.quote,
+      article_id: rand((Article.first.id)..(Article.last.id)),
+      user_id: user_id
+    )
+  end
+end

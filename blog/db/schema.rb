@@ -10,23 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_07_25_081156) do
+ActiveRecord::Schema.define(version: 2018_07_25_150452) do
 
   create_table "articles", force: :cascade do |t|
     t.string "title"
     t.string "content"
-    t.integer "users_id"
+    t.integer "user_id"
+    t.integer "category_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["users_id"], name: "index_articles_on_users_id"
+    t.index ["category_id"], name: "index_articles_on_category_id"
+    t.index ["user_id"], name: "index_articles_on_user_id"
   end
 
   create_table "categories", force: :cascade do |t|
     t.string "name"
-    t.integer "articles_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["articles_id"], name: "index_categories_on_articles_id"
   end
 
   create_table "likes", force: :cascade do |t|
