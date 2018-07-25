@@ -1,10 +1,10 @@
 # Rails Blog 
 
-# Welcome to our Rails application repository !
+ Welcome to our Rails application repository !
 
-### Instructions 
+## Instructions 
 
-## Follow these step to test ou App
+#### Follow these steps to test ou App
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
