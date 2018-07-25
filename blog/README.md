@@ -6,25 +6,13 @@
 
 #### Follow these steps to test ou App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
 
-* Ruby version
+    * git clone https://github.com/Careless-Whisper/blog_rails 
+    * cd blog_rails in your terminal
+    * Execute bundle install to update your gems
+    * Execute rails db:migrate for the migrations 
+    * Execute rails db:seed to initialize and feed your database 
 
-* System dependencies
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
