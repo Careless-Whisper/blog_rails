@@ -1,4 +1,4 @@
-# Crée une relation avec user et article
+# Crée une relation avec users et articles
 
 class Comment < ApplicationRecord
   belongs_to :user

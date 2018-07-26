@@ -1,3 +1,4 @@
+# Crée une relation avec users catégories likes et comments
 
 class Article < ApplicationRecord
   belongs_to :user

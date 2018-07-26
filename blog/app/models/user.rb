@@ -1,3 +1,4 @@
+# Crée une relation avec acticles, comments, likes
 
 class User < ApplicationRecord
   has_many :articles
