@@ -1,6 +1,7 @@
+# Créer une table articles avec une relation users et categories
 class CreateTableArticle < ActiveRecord::Migration[5.2]
   def change
-    # create 
+    # create
     create_table :articles do |t|
 
       t.string :title
